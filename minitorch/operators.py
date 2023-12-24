@@ -13,12 +13,13 @@ from typing import Callable, Iterable
 def mul(x: float, y: float) -> float:
     "$f(x, y) = x * y$"
     # TODO: Implement for Task 0.1.
-    return x+y
+    return x*y
 
 
 def id(x: float) -> float:
     "$f(x) = x$"
     # TODO: Implement for Task 0.1.
+    return x
     raise NotImplementedError("Need to implement for Task 0.1")
 
 
@@ -31,18 +32,21 @@ def add(x: float, y: float) -> float:
 def neg(x: float) -> float:
     "$f(x) = -x$"
     # TODO: Implement for Task 0.1.
+    return x if x < 0 else x==-x
     raise NotImplementedError("Need to implement for Task 0.1")
 
 
 def lt(x: float, y: float) -> float:
     "$f(x) =$ 1.0 if x is less than y else 0.0"
     # TODO: Implement for Task 0.1.
+    return 1.0 if x < y else 0.0
     raise NotImplementedError("Need to implement for Task 0.1")
 
 
 def eq(x: float, y: float) -> float:
     "$f(x) =$ 1.0 if x is equal to y else 0.0"
     # TODO: Implement for Task 0.1.
+    return 1.0 if x == y else 0.0
     raise NotImplementedError("Need to implement for Task 0.1")
 
 
